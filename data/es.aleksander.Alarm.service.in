@@ -1,0 +1,3 @@
+[D-BUS Service]
+Name=es.aleksander.Alarm
+Exec=@bindir@/service-alarm
