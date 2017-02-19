@@ -1,4 +1,6 @@
-bin_PROGRAMS = service-alarm
+bin_PROGRAMS = service-alarm client-alarm
+
+client_alarm_SOURCES = alarm.c alarm.h client-alarm.c
 
 service_alarm_SOURCES = alarm.c alarm.h service-alarm.c
 
