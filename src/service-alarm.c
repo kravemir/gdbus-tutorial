@@ -1,6 +1,6 @@
 
 #include "alarm.h"
-#include <stdio.h>
+#include <stdio.h> 
 
 static gboolean emit_alarm_cb(gpointer skeleton) {
   alarm_emit_beeeeeeeeep(ALARM(skeleton));
@@ -21,7 +21,7 @@ static gboolean on_handle_configure(Alarm *skeleton, GDBusMethodInvocation *invo
   alarm_complete_configure(skeleton, invocation);
   printf("Alarm set for %d seconds.\n", seconds);
   return TRUE;
-}
+} 
 
 static void on_name_acquired(GDBusConnection *connection, const gchar *name, gpointer user_data) {
   Alarm *skeleton;
